@@ -1,0 +1,29 @@
+.mktbg {
+    text-align: center;
+    padding: 3rem 6rem;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+p {
+    padding: 0%;
+}
+
+.navbar {
+    padding: 20 0;
+}
+
+#mainDiv {
+    height: 100%;
+}
+
+#featureDiv {
+    height: 400px;
+}
+
+#mainIMG {
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
