@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Johnson's Office</title>
+    <style>
+
+        div {
+            padding: 3px;
+        }
+        header {
+            width: 1500px;
+            height: 300px;
+            margin: auto;
+            /*border: blue 5px dashed;*/
+        }
+
+        footer {
+            width: 1500px;
+            height: 100px;
+            margin: auto;
+            /*border: blue 5px dashed;*/
+        }
+
+        #main1 {
+            height: 400px;
+            width: 1500px;
+           /* border: black 1px solid;*/
+            display: flex;
+            margin: auto;
+        }
+
+        #main2 {
+            height: 500px;
+            width: 1500px;
+           /* border: black 1px solid;*/
+            margin: auto;
+            display: flex;
+        }
+
+        #main3 {
+            height: 500px;
+            width: 1500px;
+           /* border: black 1px solid;*/
+            margin: auto;
+            display: flex;
+        }
+
+        #main1col1 {
+            display: block;
+            width: 33.33%;
+            height: 400px;
+          /*  border: red 2px dotted; */
+            position: relative;
+        }
+        #main1col2 {
+            width: 33.33%;
+            height: 400px;
+           /* border: red 2px dotted;*/
+        }
+        #main1col3 {
+            width: 33.33%;
+            height: 400px;
+           /* border: red 2px dotted;*/
+        }
+
+        #main2col1 {
+            width: 50%;
+            height: 500px;
+          /* border: red 2px dotted;*/
+        }
+        #main2col2 {
+            width: 25%;
+            height: 500px;
+           /* border: red 2px dotted;*/
+        }
+        #main2col3 {
+            width: 25%;
+            height: 500px;
+           /* border: red 2px dotted;*/
+        }
+
+        #main3col1 {
+            width: 25%;
+            height: 500px;
+            /* border: red 2px dotted;*/
+        }
+        #main3col2 {
+            width: 25%;
+            height: 500px;
+            /* border: red 2px dotted;*/
+        }
+        #main3col3 {
+            width: 25%;
+            height: 500px;
+            /* border: red 2px dotted;*/
+        }
+        #main3col4 {
+            width: 25%;
+            height: 500px;
+            /* border: red 2px dotted;*/
+        }
+        #calSec {
+            color: purple;
+            font-size: 20;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1 {
+            font-size: 75px;
+            text-align: center;
+            border: black 1px solid;
+            
+        }
+        h2 {
+            text-align: center;
+            border: black 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5px;
+            width: 50%;
+
+            
+            background: darkcyan;
+            border-radius: 10px;
+            color: white; 
+            font-size: 20px; 
+    
+}
+
+        table {
+            
+            width: 40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        thead {
+            text-align: left;
+            color: white;
+            background-color: royalblue;
+        }
+
+        tr {
+            height: 25px;
+        }
+        td {
+            
+            padding-right: 5px;
+            padding-top: 5px;
+            padding-bottom: px;
+            text-align: left;
+        }
+
+        .row1 {
+            background-color: skyblue;
+}
+
+        .row2 {
+            background-color: cyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Coach Johnson's Office</h1>
+        <marquee direction="right" bgcolor="maroon";><p style="font-style: italic; font-weight: bold; color: white; ">ELIGIBILITY ISSUES: Sam Hobard (Attendance), James Calfrey (Grades), Steve Roland (Attendance)</p></marquee>
+    <h1 style="font-size: 60px">Dashboard</h1>
+    <div id="main1">
+        <div id="main1col1">
+            <h2>Teams</h2>
+            <button style="background-color: red">Add New Team</button>
+            <br>
+            <button>Varsity Basketball</button>
+            <br>
+            <button>JV Basketball</button>
+            <br>
+            <button>Sophomore Basketball</button>
+            
+            
+
+        </div>
+        <div id="main1col2">
+            <div id="main1col2sec1" style="padding: 0px;">
+            <h2>Forms</h2>
+            <button  style="background-color: red">Add New Form</button>
+            <br>
+            <button>Forms Library</button>
+            </div>
+
+            <div id="main1col2sec2">
+                <h2>Templates</h2>
+                <button>Practice Planner</button>
+                <br>
+                <button>Away Trip Planner</button>
+                </div>
+
+        </div>
+
+        <div id="main1col3">
+            <h2>Message Board</h2>
+            <section style="border: 2px black solid; height: 75%"">
+                <form method="post"> 
+                    <fieldset>
+                        <legend>To</legend>
+                        <div>
+                            <label for="firstName">First Name: </label><input type="text" id="firstName" name="firstName" placeholder="First name" />
+                        </div>
+                    </fieldset>
+
+                    <input type="Submit" id="submit-btn" />
+                </form>
+            </section>
+                
+
+                    
+           
+
+        </div>
+    </div>
+
+    <div id="main2">
+       <!-- <p id="calSec">Calendar</p> -->
+        <div id="main2col1">
+            <h2>Month View Calendar</h2>
+            <img src="/images/marchcal.PNG" height = "80%" width = "100%">
+        </div>
+
+        <div id="main2col2">
+            <h2>Add</h2>
+            <button>Game</button>
+            <br>
+            <button>Practice</button>
+            <br>
+            <button>Meeting</button>
+            <br>
+            <button>Misc</button>
+            
+        </div>
+
+        <div id="main2col3">
+            <h2>Add Stats</h2>
+            <button>Box Score</button>
+            <br>
+            <button>Practice Stats</button>
+            <br>
+            <button>Images</button>
+            <br>
+            <button>Videos</button>
+            
+        </div>
+
+    </div>
+
+    <div id="main3">
+        <div id="main3col1">
+            <h2>Games</h2>
+            <table style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Home/Away</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td>Viewmont</td>
+                        <td>Home</td>
+                        <td>12/2/2023</td>
+                        <td>7:00pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Timpview</td>
+                        <td>Away</td>
+                        <td>12/10/2023</td>
+                        <td>7:00pm</td>
+                    </tr>
+                    <tr class="row1">
+                        <td>Alta</td>
+                        <td>Away</td>
+                        <td>12/12/2023</td>
+                        <td>7:00pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Piedmont</td>
+                        <td>Home</td>
+                        <td>12/20/2023</td>
+                        <td>7:00pm</td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div id="main3col2">
+            <h2>Practice</h2>
+            <table style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td>Practice</td>
+                        <td>Main Gym</td>
+                        <td>12/1/2023</td>
+                        <td>3:00pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Weights</td>
+                        <td>Weight Room</td>
+                        <td>12/1/2023</td>
+                        <td>4:30pm</td>
+                    </tr>
+                    <tr class="row1">
+                        <td>Practice</td>
+                        <td>Main Gym</td>
+                        <td>12/2/2023</td>
+                        <td>3:00pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Conditioning</td>
+                        <td>Track</td>
+                        <td>12/2/2023</td>
+                        <td>4:30pm</td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+        <div id="main3col3">
+            <h2>Meeting</h2>
+            <table style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td>Coaches Meeting</td>
+                        <td>Classroom 2K</td>
+                        <td>12/1/2023</td>
+                        <td>6:00pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td>Film Session</td>
+                        <td>Classroom 8K</td>
+                        <td>12/3/2023</td>
+                        <td>2:00pm</td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="main3col4">
+            <h2>Misc</h2>
+            <table style="width: 100%">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="row1">
+                        <td>Game Setup</td>
+                        <td>Home</td>
+                        <td>12/2/2023</td>
+                        <td>6:30pm</td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row1">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="row2">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
