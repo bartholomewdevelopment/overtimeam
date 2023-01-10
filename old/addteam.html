@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a Team</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+
+
+Add a Team
+<h1 class="backbtn"><a href="org_1.html">Back</a></h1>
+
+
+
+<div>
+    <form>
+        <label for="teamname">Team Name:</label>
+        <input type="text" id="orgname" name="orgname" required minlength="1" maxlength="50" size="50">
+        <input type="submit">
+               
+        
+
+    </form>
+</div>
+
+<button type="button" onclick="myFunction()">
+    Add a Team
+</button>
+
+
+<table id="myTeam">
+                
+    <tr>
+        <th>Team Name</th>
+    </tr>
+
+    <tr>
+        <td><a href="#" id="team1">Team 1</a></td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="#" id="team2">Team 2</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <a href="#" id="team3">Team 3</a>
+        </td>
+    </tr>
+    
+</table>
+
+<script>
+    let x = 3;
+    function myFunction() {
+      let table = document.getElementById("myTeam");
+      let row = table.insertRow(1);
+      let cell1 = row.insertCell(0);
+
+      
+      x++;
+      
+      
+      return cell1.innerHTML = "Team " + x;
+      
+    }
+    </script>
+</body>
+</html>

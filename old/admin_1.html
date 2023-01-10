@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Tracker Plus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div>
+        <h1>
+            Administrator View
+        </h1>
+    </div>
+
+    <div>
+        <h2>James Johnson</h2> <!--Name-->
+        <address> <!--Location-->
+            123 Place St.
+            City, ST 01234
+        </address>
+        <h3>Athletic Director</h3> <!--Title-->
+    </div>
+    <div>
+        <h1>
+            Your Organizations
+        </h1>
+
+        
+            <button type="button" onclick="myFunction()">
+                Add an Organization
+            </button>
+        </a>
+        <div>
+            <table id="myTable">
+                
+                <tr>
+                    <th>Organization Name</th>
+                </tr>
+
+                <tr>
+                    <td><a href="org_1.html" id="org1">Organization 1</a></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="org_2.html" id="org2">Organization 2</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="org_3.html" id="org3">Organization 3</a>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+          let table = document.getElementById("myTable");
+          let row = table.insertRow(1);
+          let cell1 = row.insertCell(0);
+
+          let x = 4;
+          const y = x++;
+          
+          
+          cell1.innerHTML = "Organization " + console.log(y);
+          
+        }
+        </script>
+</body>
+</html>
