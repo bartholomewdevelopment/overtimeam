@@ -15,7 +15,7 @@
     <header class="jumbotron jumbotron-fluid bg-light sticky-top">
       <nav class="navbar navbar-expand-sm bg-light">
         <div class="col">
-          <div class="row"><a class="navbar-brand" href="#"><img src="img/logo.png" height="50" /></a></div>
+          <div class="row"><a class="navbar-brand" href="#"><img src="img/logo.png" height="50"/></a></div>
         </div>
         <div class="col">
           <div class="row">
@@ -86,10 +86,11 @@
       </div>
       <!-- End of Login Modal Code-->
 
+      <!-- Main section-->
       <div style="background: linear-gradient(135deg, #24a9e2, #1d75bd)" id="mainDiv">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-7 mktbg">
+            <div class="col-6 mktbg">
               <h1>Overtime Athletic Management</h1>
               <h2>Designed with the entire sports program in mind.</h2>
               <p>
@@ -97,22 +98,27 @@
               </p>
               <a href="demo.html" class="btn btn-lg btn-primary">Schedule a Live Demonstration</a>
             </div>
-            <div class="col pr-0">
-              <img src="img/sport_management.jpeg-1.jpg" class="float-right img-fluid" id="mainIMG" alt="" />
+            <div class="col pr-0 d-flex align-items-center">
+              <img src="img/sport_management.jpg" class="img-fluid" id="mainIMG" alt="" />
             </div>
           </div>
         </div>
       </div>
+      <!-- End of Main section-->
 
+      <!-- Start of features section-->
       <div class="container-fluid" id="featureDiv">
         <div class="row mt-4">
           <div class="col-12 mb-3">
             <h2 class="text-center mx-auto">How We Will Help Your Program Be Successful</h2>
           </div>
-          <div class="col-2 ml-5 mr-2 text-center">
+          <div class="col-2 ml-5 mr-2 text-left">
             <div class="card">
+              <img class="img-fluid" src="img/signup.jpg" class="card-img-top" alt="line-up list">
+              <div class="card-header" style="background-color: lightgray">
+                <h5 class="text-center"><strong>Easy Online Registration</strong></h5>
+              </div>
               <div class="card-body">
-                <h5><strong>Easy Online Registration</strong></h5>
                 <p>
                   We will provide a customized experience to allow your admins, coaches, athletes, and parents/guardians the ability to fill out and sign registration forms, liability forms, and any custom forms you require.
                 </p>
@@ -120,10 +126,13 @@
               </div>
             </div>
           </div>
-          <div class="col-2 ml-3 mr-2 text-center">
+          <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
+              <img class="img-fluid" src="img/roster.jpg" alt="roster">
+              <div class="card-header" style="background-color: lightgray">
+                <h5 class="text-center"><strong>Roster Builder</strong></h5>
+              </div>
               <div class="card-body">
-                <h5><strong>Roster Builder</strong></h5>
                 <p>
                   Coaches will love the ease of viewing your athlete's registration status, and using this list to create their different roster lists.  You can create as many custom rosters as you want, like Guards vs. Forwards, or Varsity vs. JV.
                 </p>
@@ -131,10 +140,13 @@
               </div>
             </div>
           </div>
-          <div class="col-2 ml-3 mr-2 text-center">
+          <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
+              <img class="img-fluid" src="img/inventory.jpg" alt="sporting equipment">
+              <div class="card-header" style="background-color: lightgray">
+                <h5 class="text-center"><strong>Asset Management</strong></h5>
+              </div>
               <div class="card-body">
-                <h5><strong>Asset Management</strong></h5>
                 <p>
                   Coaches and Administrators will easily by able to track your programs' assets: Sports Equipment, Uniforms, Facility Scheduling, Fundraising, and more.<br><br>
                 </p>
@@ -142,10 +154,13 @@
               </div>
             </div>
           </div>
-          <div class="col-2 ml-3 mr-2 text-center">
+          <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
+              <img class="img-fluid" src="img/headset.jpg" alt="sports headset">
+              <div class="card-header" style="background-color: lightgray">
+                <h5 class="text-center"><strong>Integrated Communications</strong></h5>
+              </div>
               <div class="card-body">
-                <h5><strong>Integrated Communications</strong></h5>
                 <p>
                   Avoid the dangers unmonitored communications.  Our message board and instant messaging platform will keep all messages safe and secure,  monitored by admin, coach, and parent alike.
                 </p>
@@ -153,19 +168,24 @@
               </div>
             </div>
           </div>
-          <div class="col-2 ml-3 text-center">
+          <div class="col-2 ml-3 text-left">
             <div class="card">
+              <img class="img-fluid" src="img/tournament.jpg" alt="">
+              <div class="card-header" style="background-color: lightgray">
+                <h5 class="text-center"><strong>Schedule & Tourney Builder</strong></h5>
+              </div>
               <div class="card-body">
-                <h5><strong>Schedule & Tourney Builder</strong></h5>
                 <p>
                   Enter in the dates and locations of your practices, meetings and games, and our scheduler does the rest.  Everyone will be on the same page with very little effort.<br><br>
                 </p>
                 <a href="#" class="btn btn-primary">Learn More</a>
               </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Start of features section-->
 
       <footer>
         <div class="container">
@@ -195,6 +215,9 @@
       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+      <p>Credits:</p>
+      <p><a href="https://www.freepik.com/free-photo/sign-up-register-join-applicant-enroll-enter-membership-concept_15438760.htm#query=online%20registration&position=4&from_view=keyword">Image by rawpixel.com</a> on Freepik</p>
 </body>
 
 </html>

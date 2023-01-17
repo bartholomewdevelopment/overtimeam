@@ -19,14 +19,17 @@ p {
     height: 100%;
 }
 
-#featureDiv {
+/* #featureDiv {
     height: 400px;
-}
+} */
 
 #mainIMG {
-    height: 100%;
-    border-radius: 20px 0 0 20px;
-}
+    max-width: 100%;
+    height: auto;
+    /* top: 25%; */
+    /* height: 100%; */
+    /* border-radius: 20px 0 0 20px;
+} */
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -67,7 +70,10 @@ footer {
 
 .navbar {
     background-color: #ffffff;
-    
+}
+
+.card-header {
+    background-color: gray;
 }
 
 /*.carousel { width: auto; height:360px; }
@@ -128,6 +134,10 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
 
+}
+
+.card {
+    min-width: 175px;
 }
 
 /* Below is the CSS for the Heroes items */
