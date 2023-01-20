@@ -60,6 +60,10 @@ header h2 {
     box-shadow: 3px 3px;
 }
 
+.btn-wrap {
+    overflow-wrap: normal;
+}
+
 .card {
     min-width: 175px;
 }
@@ -120,7 +124,7 @@ header h2 {
 
 .mktbg {
     text-align: center;
-    padding: 3rem 6rem;
+    padding: 3rem 3rem;
 }
 
 .navbar {
@@ -140,6 +144,8 @@ header h2 {
 } */
 
 #mainDiv {
+    /* min-height: 676.5px;
+    max-height: 900px; */
     height: 100%;
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
 }
