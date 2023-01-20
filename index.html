@@ -4,37 +4,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
   <link rel="stylesheet" href="css/style.css" />
+  
   <title>Home - Overtime A.M.</title>
   </head>
 
 <body>
     <header class="jumbotron jumbotron-fluid bg-light sticky-top">
       <nav class="navbar navbar-expand-sm bg-light">
-        <div class="col">
-          <div class="row"><a class="navbar-brand" href="#"><img src="img/logo.png" height="50"/></a></div>
-        </div>
-        <div class="col">
-          <div class="row">
-            <div class="collapse navbar-collapse" id="overtimeNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="product.html"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
-                
-              </ul>
-              <span class="navbar-text ml-auto btn btn-outline-primary btn-sm"><a role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i> Login</a></span>
-            </div>
-          </div>
-        </div>
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="50"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="overtimeNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
+            <li class="nav-item"><a class="nav-link" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
+          </ul>
+          <span class="navbar-text ml-auto btn btn-outline-primary btn-sm">
+            <a role="button" data-toggle="modal" data-target="#loginModal">
+              <i class="fa fa-sign-in"></i> Login
+            </a>
+          </span>
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
       </nav>
   </header>
 
@@ -96,7 +98,7 @@
               <p>
                 Overtime Athletic Management provides a web and mobile application to give administrators, coaches and athletes a comprehensive athletics experience. This experience includes allowing them to complete registration, create teams and rosters, create calendars, have secure communications, and track assets. 
               </p>
-              <a href="demo.html" class="btn btn-lg btn-primary">Schedule a Live Demonstration</a>
+              <a href="demo.html" class="btn btn-lg btn-light btn-shadow">Schedule a Live Demonstration</a>
             </div>
             <div class="col pr-0 d-flex align-items-center">
               <img src="img/sport_management.jpg" class="img-fluid float-right" id="mainIMG" alt="" />
@@ -108,7 +110,7 @@
 
       <!-- Start of features section-->
       <div class="container-fluid" id="featureDiv">
-        <div class="row mt-4">
+        <div class="row my-4 accordion" id="featureAccordion">
           <div class="col-12 mb-3">
             <h2 class="text-center mx-auto featureTitle">
               How We Will Help Your Program Be Successful</button>
@@ -116,13 +118,13 @@
           </div>
           <div class="col-2 ml-5 mr-2 text-left">
             <div class="card">
-              <img class="img-fluid" src="img/signup.jpg" class="card-img-top" alt="line-up list">
-              <div class="card-header" id="headingRegistration" style=" background-color: lightgray">
+              <img class="img-fluid" src="img/Signup.png" class="card-img-top" alt="line-up list">
+              <div class="card-header" style=" background-color: lightgray">
                <h5>
                 <button class="btn btn-link btn-block text-center cardHeaderLink" type="button" data-toggle="collapse" data-target="#collapseRegistration"><strong>Easy Online Registration</strong></button>
               </h5>
               </div>
-              <div class="card-body">
+              <div id="collapseRegistration" class="card-body collapse show" data-parent="#featureAccordion">
                 <p>
                   We will provide a customized experience to allow your admins, coaches, athletes, and parents/guardians the ability to fill out and sign registration forms, liability forms, and any custom forms you require.
                 </p>
@@ -132,11 +134,13 @@
           </div>
           <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
-              <img class="img-fluid" src="img/roster.jpg" alt="roster">
+              <img class="img-fluid" src="img/Roster.png" alt="roster">
               <div class="card-header" style="background-color: lightgray">
-                <h5 class="text-center"><strong>Roster Builder</strong></h5>
+                <h5>
+                  <button class="btn btn-link btn-block text-center cardHeaderLink" type="button" data-toggle="collapse" data-target="#collapseRoster"><strong>Roster Builder</strong></button>
+                </h5>
               </div>
-              <div class="card-body">
+              <div id="collapseRoster" class="card-body collapse" data-parent="#featureAccordion">
                 <p>
                   Coaches will love the ease of viewing your athlete's registration status, and using this list to create their different roster lists.  You can create as many custom rosters as you want, like Guards vs. Forwards, or Varsity vs. JV.
                 </p>
@@ -146,11 +150,12 @@
           </div>
           <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
-              <img class="img-fluid" src="img/inventory.jpg" alt="sporting equipment">
+              <img class="img-fluid" src="img/SportsEquipment.png" alt="sporting equipment">
               <div class="card-header" style="background-color: lightgray">
-                <h5 class="text-center"><strong>Asset Management</strong></h5>
+                <h5>
+                  <button class="btn btn-link btn-block text-center cardHeaderLink" type="button" data-toggle="collapse" data-target="#collapseInventory"><strong>Asset Management</strong></h5>
               </div>
-              <div class="card-body">
+              <div id="collapseInventory" class="card-body collapse" data-parent="#featureAccordion">
                 <p>
                   Coaches and Administrators will easily by able to track your programs' assets: Sports Equipment, Uniforms, Facility Scheduling, Fundraising, and more.<br><br>
                 </p>
@@ -160,11 +165,13 @@
           </div>
           <div class="col-2 ml-3 mr-2 text-left">
             <div class="card">
-              <img class="img-fluid" src="img/headset.jpg" alt="sports headset">
+              <img class="img-fluid" src="img/Headset.png" alt="sports headset">
               <div class="card-header" style="background-color: lightgray">
-                <h5 class="text-center"><strong>Integrated Communications</strong></h5>
+                <h5>
+                  <button class="btn btn-link btn-block text-center cardHeaderLink" type="button" data-toggle="collapse" data-target="#collapseCommunication"><strong>Integrated Communications</strong>
+                </h5>
               </div>
-              <div class="card-body">
+              <div id="collapseCommunication" class="card-body collapse" data-parent="#featureAccordion">
                 <p>
                   Avoid the dangers unmonitored communications.  Our message board and instant messaging platform will keep all messages safe and secure,  monitored by admin, coach, and parent alike.
                 </p>
@@ -174,22 +181,24 @@
           </div>
           <div class="col-2 ml-3 text-left">
             <div class="card">
-              <img class="img-fluid" src="img/tournament.jpg" alt="">
+              <img class="img-fluid" src="img/Calendar.png" alt="">
               <div class="card-header" style="background-color: lightgray">
-                <h5 class="text-center"><strong>Schedule & Tourney Builder</strong></h5>
+                <h5>
+                  <button class="btn btn-link btn-block text-center cardHeaderLink" type="button" data-toggle="collapse" data-target="#collapseSchedule"><strong>Schedule & Tourney Builder</strong>
+                </h5>
               </div>
-              <div class="card-body">
+              <div id="collapseSchedule" class="card-body collapse" data-parent="#featureAccordion">
                 <p>
                   Enter in the dates and locations of your practices, meetings and games, and our scheduler does the rest.  Everyone will be on the same page with very little effort.<br><br>
                 </p>
                 <a href="#" class="btn btn-primary">Learn More</a>
               </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Start of features section-->
+
+      <!-- Start of section-->
       <div class="container container-fluid">
         <div class="row">
           <div class="col">
@@ -197,6 +206,7 @@
           </div>
         </div>
       </div>
+
       <footer>
         <div class="container">
           <div class="row">
