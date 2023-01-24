@@ -17,10 +17,10 @@ h1 {
     color: white;
 }
 
-product.html: h1 {
+/* product.html: h1 {
     color: black;
     text-shadow: 3px 3px #ffffff;
-}
+} */
 
 h1, h2, h3 {
     font-family: "Ariel", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -152,7 +152,7 @@ header h2 {
 }
 
 .twoCol {
-    columns: 2;
+    columns: 3;
 }
 
 #featureAccordion {
@@ -186,22 +186,27 @@ header h2 {
 #mainIMG {
     max-width: 100%;
     height: auto;
-    /* top: 25%; */
+    /* top: 25%;
     /* height: 100%; */
-    /* border-radius: 20px 0 0 20px;
-} */
+    /* border-radius: 20px 0 0 20px; */
+}
 
 /* #registerColumn {
     border-right: solid black 3px;
 } */
 
-*, ::after, ::before {
+*::after, ::before {
     box-sizing: border-box;
 }
 
 #secondDiv {
-    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
+    background-image: linear-gradient(#1d75bd, white);    /* 1d75bd*/
     height: 100%;
+}
+
+#secondDiv h2 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 /* Below is the CSS for the Heroes items */
