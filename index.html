@@ -15,28 +15,25 @@
 
 <body>
     <header class="jumbotron jumbotron-fluid bg-light sticky-top">
-      <nav class="navbar navbar-expand-sm bg-light">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="img/logo.png" height="50"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="overtimeNavbar">
+        <div class="collapse navbar-collapse text-primary" id="overtimeNavbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="product.html"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
-            <li class="nav-item"><a class="nav-link" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
+            <li class="nav-item active"><a class="nav-link text-primary" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="product.html"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
+            <li class="nav-item"><a class="nav-link text-primary" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
           </ul>
-          <span class="navbar-text ml-auto btn btn-outline-primary btn-sm">
+          <span class="ml-auto btn btn-outline-primary btn-sm">
             <a role="button" data-toggle="modal" data-target="#loginModal">
               <i class="fa fa-sign-in"></i> Login
             </a>
           </span>
         </div>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
       </nav>
   </header>
 
@@ -119,7 +116,11 @@
           
           
           <div class="col-2 text-left">
+
+            <div class="card shadow-lg">
+
             <div class="card">
+
               <img class="img-fluid card-img-top" src="img/Signup.png" alt="line-up list">
               <div class="card-header" style=" background-color: lightgray">
                <h5>
@@ -138,7 +139,7 @@
 
 
           <div class="col-2 text-left">
-            <div class="card">
+            <div class="card shadow-lg">
               <img class="img-fluid" src="img/Roster.png" alt="roster">
               <div class="card-header" style="background-color: lightgray">
                 <h5>
@@ -154,7 +155,7 @@
             </div>
           </div>
           <div class="col-2 text-left">
-            <div class="card">
+            <div class="card shadow-lg">
               <img class="img-fluid" src="img/SportsEquipment.png" alt="sporting equipment">
               <div class="card-header" style="background-color: lightgray">
                 <h5>
@@ -169,7 +170,7 @@
             </div>
           </div>
           <div class="col-2 text-left">
-            <div class="card">
+            <div class="card shadow-lg">
               <img class="img-fluid" src="img/Headset.png" alt="sports headset">
               <div class="card-header" style="background-color: lightgray">
                 <h5>
@@ -185,7 +186,7 @@
             </div>
           </div>
           <div class="col-2 text-left">
-            <div class="card">
+            <div class="card shadow-lg">
               <img class="img-fluid" src="img/Calendar.png" alt="calendar">
               <div class="card-header" style="background-color: lightgray">
                 <h5>
@@ -203,12 +204,40 @@
         </div>
       </div>
 
+
+
+
+
       <!-- Start of second section-->
       <div class="d-flex" id="secondDiv">
         <div class="container container-fluid">
           <div class="row" style="height: 500px;">
-            <div class="col text-center">
-              <h2>Additional Content</h2>
+            <div class="col-6 text-left">
+              <h2 class="pt-5">Work like the professional you are!</h2>
+              <h4>All the tools you need to get and stay organized</h4>
+              <div class="row mt-4 mb-3 offset-2">
+                <div class="col-1">
+                  <button class="btn">
+                    <i class="fa-regular fa-square-check"></i>
+                  </button>
+                </div>
+                <h5>Team Management</h5>
+              </div>
+              <div class="row my-3 offset-2">
+                <a class="btn" href=""></a>
+                <h5>Schedule Management</h5>
+              </div>
+              <div class="row my-3 offset-2">
+                <a class="btn" href=""></a>
+                <h5>Flexible registration</h5>
+              </div>
+              <div class="row my-3 offset-2">
+                <a class="btn" href=""></a>
+                <h5>Parent and player data Management and portals</h5>
+              </div>
+              <div class="row my-3 offset-2">
+                <a class="btn" href=""></a>
+                <h5>Team Management</h5>
               </div>
             </div>
           </div>
@@ -222,17 +251,17 @@
           <div class="row">
             <div class="col">
               <h5>Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="demo.html">Demo</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="admin.html">Admin Access</a></li>
+              <ul class="list-unstyled twoCol">
+                <li><a class="text-white" href="#">Home</a></li>
+                <li><a class="text-white" href="product.html">Products</a></li>
+                <li><a class="text-white" href="demo.html">Demo</a></li>
+                <li><a class="text-white" href="about.html">About</a></li>
+                <li><a class="text-white" href="register.html">Register</a></li>
+                <li><a class="text-white" href="admin.html">Admin Access</a></li>
               </ul>
             </div>
 
-            <div class="col text-center">
+            <div class="col text-center m-auto">
               <a role="button" class="btn btn-link" href="tel:+18013806649"><i class="fa fa-phone"></i>
                 1-801-380-6649</a><br />
               <a role="button" class="btn btn-link" href="mailto:us@overtimeam.com"><i class="fa fa-envelope-o"></i>

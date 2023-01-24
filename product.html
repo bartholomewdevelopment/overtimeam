@@ -14,31 +14,28 @@
   </head>
 
 <body>
-    <header class="jumbotron jumbotron-fluid bg-light sticky-top">
-      <nav class="navbar navbar-expand-sm bg-light">
-        <div class="col">
-          <div class="row"><a class="navbar-brand" href="index.html"><img src="img/logo.png" height="50" /></a></div>
-        </div>
-        <div class="col">
-          <div class="row">
-            <div class="collapse navbar-collapse" id="overtimeNavbar">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
-                <li class="nav-item"><a class="nav-link" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
-                
-              </ul>
-              <span class="navbar-text ml-auto btn btn-outline-primary btn-sm"><a role="button" data-toggle="modal" data-target="#loginModal"><i class="fa fa-sign-in"></i> Login</a></span>
-            </div>
-          </div>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav>
-  </header>
+  <header class="jumbotron jumbotron-fluid bg-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="50"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#overtimeNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-primary" id="overtimeNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link text-primary" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+          <li class="nav-item active"><a class="nav-link text-primary" href="#"><i class="fa fa-solid fa-laptop fa-lg"></i> Products</a></li>
+          <li class="nav-item"><a class="nav-link text-primary" href="demo.html"><i class="fa fa-info fa-lg"></i> Demo</a></li>
+          <li class="nav-item"><a class="nav-link text-primary" href="about.html"><i class="fa fa-address-card fa-lg"></i> About</a></li>
+          <li class="nav-item"><a class="nav-link text-primary" href="register.html"><i class="fa fa-list fa-lg"></i> Register</a></li>
+        </ul>
+        <span class="ml-auto btn btn-outline-primary btn-sm">
+          <a role="button" data-toggle="modal" data-target="#loginModal">
+            <i class="fa fa-sign-in"></i> Login
+          </a>
+        </span>
+      </div>
+    </nav>
+</header>
 
   <!-- Start of Login Modal Code-->
   <div id="loginModal" class="modal fade" role="dialog">
@@ -214,17 +211,17 @@
           <div class="row">
             <div class="col">
               <h5>Links</h5>
-              <ul class="list-unstyled">
-                <li><a href="#">Home</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="demo.html">Demo</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="admin.html">Admin Access</a></li>
+              <ul class="list-unstyled twoCol">
+                <li><a class="text-white" href="index.html">Home</a></li>
+                <li><a class="text-white" href="#">Products</a></li>
+                <li><a class="text-white" href="demo.html">Demo</a></li>
+                <li><a class="text-white" href="about.html">About</a></li>
+                <li><a class="text-white" href="register.html">Register</a></li>
+                <li><a class="text-white" href="admin.html">Admin Access</a></li>
               </ul>
             </div>
 
-            <div class="col text-center">
+            <div class="col text-center m-auto">
               <a role="button" class="btn btn-link" href="tel:+18013806649"><i class="fa fa-phone"></i>
                 1-801-380-6649</a><br />
               <a role="button" class="btn btn-link" href="mailto:us@overtimeam.com"><i class="fa fa-envelope-o"></i>
