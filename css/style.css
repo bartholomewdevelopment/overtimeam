@@ -141,6 +141,10 @@ header h2 {
 
 }
 
+
+.profilePic {
+    height: 450px;
+}
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
