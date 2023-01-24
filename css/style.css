@@ -7,9 +7,9 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(black, black);
+    background-image: linear-gradient(black, rgb(64, 64, 64));
     padding: 20px 0;
-    color: white;
+    color: #0056b3;
 }
 
 h1 {
@@ -147,6 +147,10 @@ header h2 {
     min-height: 200px;
 }
 
+.twoCol {
+    columns: 2;
+}
+
 #featureAccordion {
     background-position: center;
     background-repeat: no-repeat;
@@ -192,7 +196,7 @@ header h2 {
 }
 
 #secondDiv {
-    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
+    background-image: linear-gradient(#1d75bd, white);
     height: 100%;
 }
 
