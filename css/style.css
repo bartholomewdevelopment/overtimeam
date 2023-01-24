@@ -7,9 +7,9 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(black, black);
+    background-image: linear-gradient(black, rgb(64, 64, 64));
     padding: 20px 0;
-    color: white;
+    color: #0056b3;
 }
 
 h1 {
@@ -149,6 +149,10 @@ header h2 {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+}
+
+.twoCol {
+    columns: 2;
 }
 
 #featureAccordion {
