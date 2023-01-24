@@ -7,14 +7,19 @@ body {
 }
 
 footer {
-    background-image: linear-gradient(black, rgb(64, 64, 64));
+    background-image: linear-gradient(black, black);
     padding: 20px 0;
-    color: #0056b3;
+    color: white;
 }
 
 h1 {
     text-shadow: 3px 3px #000000;
     color: white;
+}
+
+product.html: h1 {
+    color: black;
+    text-shadow: 3px 3px #ffffff;
 }
 
 h1, h2, h3 {
@@ -27,11 +32,6 @@ h2 {
 
 header h2 {
     color: #808185;
-}
-
-.blackOnGray {
-    color: black;
-    text-shadow: 3px 3px #c3c3c3;
 }
 
 .btn-facebook {
@@ -73,14 +73,6 @@ header h2 {
     height: 100px;
 }
 
-.card-profile-header {
-    height: 100px;
-}
-
-.card-profile-text {
-    padding-left: 10px;
-    padding-top: 10px;
-}
 .cardHeaderLink {
     color: black;
     font-family: "Open Sans";
@@ -90,7 +82,9 @@ header h2 {
 .card-space {
     justify-content: space-around;
 }
+/*.carousel { width: auto; height:360px; }
 
+*/
 
 .demoForm {
     margin-left: 300px;
@@ -147,18 +141,10 @@ header h2 {
 
 }
 
-.profilePic {
-    height: 450px;
-}
-
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
-}
-
-.twoCol {
-    columns: 2;
 }
 
 #featureAccordion {
@@ -181,30 +167,10 @@ header h2 {
     opacity: .15;
 }
 
-
-#profileAccordion {
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 150%;
-    position: relative;
-}
-
-#profileAccordion::before {
-    content: "";
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    left: 0px;
-    opacity: .15;
-}
-
-
 #mainDiv {
     /* min-height: 676.5px;
     max-height: 900px; */
-    background-image: linear-gradient(#24a9e2, #1d75bd);
+    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
     height: 100%;
     font-size: calc(12px + 6 * ((100vw - 320px) / 680));
 }
@@ -212,14 +178,21 @@ header h2 {
 #mainIMG {
     max-width: 100%;
     height: auto;
-}
+    /* top: 25%; */
+    /* height: 100%; */
+    /* border-radius: 20px 0 0 20px;
+} */
 
-::after, ::before {
+/* #registerColumn {
+    border-right: solid black 3px;
+} */
+
+*, ::after, ::before {
     box-sizing: border-box;
 }
 
 #secondDiv {
-    background-image: linear-gradient(#1d75bd, white);
+    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
     height: 100%;
 }
 
