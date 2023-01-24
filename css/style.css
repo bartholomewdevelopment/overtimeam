@@ -79,6 +79,10 @@ header h2 {
     font-size: large;
 }
 
+.card-shadow {
+    box-shadow: 3px 3px 3px ; /*#1d75bd*/
+}
+
 .card-space {
     justify-content: space-around;
 }
@@ -117,8 +121,8 @@ header h2 {
 }
 
 .featureTitle {
-    color: #3046C5;
-    text-shadow: 2px 2px 3px black;
+    color: black;
+    text-shadow: 2px 2px 3px #3046C5;
 }
 
 .jumbotron {
