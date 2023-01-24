@@ -58,13 +58,21 @@ header h2 {
     color: #fff;
 }
 
+.btn-shadow {
+    box-shadow: 3px 3px;
+}
+
+.btn-wrap {
+    overflow-wrap: normal;
+}
+
 .card {
     min-width: 175px;
 }
 
 .card-header {
     background-color: gray;
-    pad
+    height: 100px;
 }
 
 .cardHeaderLink {
@@ -73,6 +81,9 @@ header h2 {
     font-size: large;
 }
 
+.card-space {
+    justify-content: space-around;
+}
 /*.carousel { width: auto; height:360px; }
 
 */
@@ -107,6 +118,11 @@ header h2 {
     z-index: 1;
 }
 
+.featureTitle {
+    color: #3046C5;
+    text-shadow: 2px 2px 3px black;
+}
+
 .jumbotron {
     padding: 30px;
     background-color: white;
@@ -118,7 +134,7 @@ header h2 {
 
 .mktbg {
     text-align: center;
-    padding: 3rem 6rem;
+    padding: 3rem 3rem;
 }
 
 .navbar {
@@ -133,12 +149,32 @@ header h2 {
     min-height: 200px;
 }
 
-/* #featureDiv {
-    height: 400px;
-} */
+#featureAccordion {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: max-content; */
+    min-height: 150%;
+    position: relative;
+}
+
+#featureAccordion::before {
+    content: "";
+    background-image: url('../img/manySports2.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    opacity: .15;
+}
 
 #mainDiv {
+    /* min-height: 676.5px;
+    max-height: 900px; */
+    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
     height: 100%;
+    font-size: calc(12px + 6 * ((100vw - 320px) / 680));
 }
 
 #mainIMG {
@@ -149,11 +185,17 @@ header h2 {
     /* border-radius: 20px 0 0 20px;
 } */
 
-#registerColumn {
+/* #registerColumn {
     border-right: solid black 3px;
-}
+} */
+
 *, ::after, ::before {
     box-sizing: border-box;
+}
+
+#secondDiv {
+    background-image: linear-gradient(#24a9e2, #1d75bd);    /* 1d75bd*/
+    height: 100%;
 }
 
 /* Below is the CSS for the Heroes items */
