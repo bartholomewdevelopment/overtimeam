@@ -34,6 +34,15 @@ header h2 {
     color: #808185;
 }
 
+*:hover > .fa-hover-hidden,
+*:focus > .fa-hover-hidden {
+  display: none;
+}
+*:focus > .fa-hover-show,
+*:hover > .fa-hover-show {
+  display: inline-block;
+}
+
 .btn-facebook {
     background-color: #405D9D;
     color: #fff;
@@ -80,15 +89,16 @@ header h2 {
 }
 
 .card-shadow {
-    box-shadow: 3px 3px 3px ; /*#1d75bd*/
+    box-shadow: 3px 3px 3px black; /*#1d75bd*/
 }
 
 .card-space {
     justify-content: space-around;
 }
-/*.carousel { width: auto; height:360px; }
 
-*/
+.carousel-indicators {
+    color: black;
+}
 
 .demoForm {
     margin-left: 300px;
@@ -122,7 +132,7 @@ header h2 {
 
 .featureTitle {
     color: black;
-    text-shadow: 2px 2px 3px #3046C5;
+    text-shadow: 2px 2px 3px #1d75bd;
 }
 
 .jumbotron {
@@ -179,6 +189,12 @@ header h2 {
     opacity: .15;
 }
 
+#homeCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #mainDiv {
     /* min-height: 676.5px;
     max-height: 900px; */
@@ -207,6 +223,10 @@ header h2 {
     background-image: linear-gradient(#1d75bd, white);    /* 1d75bd*/
     height: 100%;
 }
+
+/* #secondDiv i:hover:focus{
+     background-color: ;
+} */
 
 #secondDiv h2 {
     color: white;
