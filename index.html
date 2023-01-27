@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/style.css" />
 
   <script src="https://kit.fontawesome.com/90feafe761.js" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
   
   <title>Home - Overtime A.M.</title>
   </head>
@@ -77,14 +78,13 @@
                       </div>
                       <div><p class="text-center">Don't have an account yet? <a href="register.html">Register</a> </p> </div>
                     </form>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>      
+          </div>
+        </div>      
       </div>
-      </div>
-      </div>
+    </div>
       <!-- End of Login Modal Code-->
 
       <!-- Main section-->
@@ -207,8 +207,7 @@
               <div class="row mt-4 mb-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i class="fa-regular fa-square-check fa-hover-show fa-2x"></i>
-                    <!-- <i class="fa-solid fa-square-check fa-hover-hidden fa-2x"></i> -->
+                    <i id="teamMngmtBtn" onclick="showAndHide(0)" class="fa-regular fa-square-check fa-2x fa-hover-show active"></i>
                   </a>
                 </div>
                 <h5>Team Management</h5>
@@ -216,7 +215,7 @@
               <div class="row my-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i class="fa-regular fa-square-check fa-2x"></i>
+                    <i onclick="showAndHide(1)" class="fa-regular fa-square-check fa-2x fa-hover-show"></i>
                   </a>
                 </div>
                 <h5>Schedule Management</h5>
@@ -224,7 +223,7 @@
               <div class="row my-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i class="fa-regular fa-square-check fa-2x"></i>
+                    <i onclick="showAndHide(2)" class="fa-regular fa-square-check fa-2x fa-hover-show"></i>
                   </a>
                 </div>
                 <h5>Flexible registration</h5>
@@ -232,7 +231,7 @@
               <div class="row my-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i class="fa-regular fa-square-check fa-2x"></i>
+                    <i onclick="showAndHide(3)" class="fa-regular fa-square-check fa-2x fa-hover-show"></i>
                   </a>
                 </div>
                 <h5>Parent and player portals</h5>
@@ -240,32 +239,28 @@
               <div class="row my-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i class="fa-regular fa-square-check fa-2x"></i>
+                    <i onclick="showAndHide(4)" class="fa-regular fa-square-check fa-2x fa-hover-show"></i>
                   </a>
                 </div>
                 <h5>Many sports, programs and organizations supported</h5>
               </div>
             </div>
-            <div class="col-6" id="homeCarousel">
-              <div class="col-10">
-                <div class="carousel slide" id="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100 mx-auto" src="img/team management.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100 mx-auto" src="img/schedule management.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100 mx-auto" src="img/flexible registration.jpg" alt="">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100 mx-auto" src="img/players.webp" alt="">
-                    </div>
-                    <div class="carousel-item">
-                      <img class="d-block w-100 mx-auto" src="img/multiple_sports_program.jpg" alt="">
-                    </div>
-                  </div>
+            <div class="col-6" style="display: flex; align-items: center;">
+              <div class="col-10 mx-auto">
+                <div>
+                  <img id="0" class="w-100" src="img/teamManagement.jpg" alt="">
+                </div>
+                <div>
+                  <img id="1" style="display: none;" class="w-100" src="img/schedule management.jpg" alt="">
+                </div>
+                <div>
+                  <img id="2" style="display: none;" class="w-100" src="img/flexible registration.jpg" alt="">
+                </div>
+                <div>
+                  <img id="3" style="display: none;" class="w-100" src="img/players.webp" alt="">
+                </div>
+                <div>
+                  <img id="4" style="display: none;" class="w-100" src="img/multiple_sports_program.jpg" alt="">
                 </div>
               </div>
             </div>

@@ -1,3 +1,16 @@
+*::after, ::before {
+    box-sizing: border-box;
+}
+
+*:hover > .fa-hover-hidden {
+    display: none;
+}
+
+*:hover > .fa-hover-show {
+display: inline-block;
+color: white;
+}
+
 p {
     padding: 0%;
 }
@@ -32,15 +45,6 @@ h2 {
 
 header h2 {
     color: #808185;
-}
-
-*:hover > .fa-hover-hidden,
-*:focus > .fa-hover-hidden {
-  display: none;
-}
-*:focus > .fa-hover-show,
-*:hover > .fa-hover-show {
-  display: inline-block;
 }
 
 .btn-facebook {
@@ -155,10 +159,10 @@ header h2 {
 
 }
 
-
 .profilePic {
     height: 450px;
 }
+
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
@@ -215,23 +219,37 @@ header h2 {
     border-right: solid black 3px;
 } */
 
-*::after, ::before {
-    box-sizing: border-box;
-}
+
 
 #secondDiv {
     background-image: linear-gradient(#1d75bd, white);    /* 1d75bd*/
     height: 100%;
 }
 
-/* #secondDiv i:hover:focus{
-     background-color: ;
-} */
-
 #secondDiv h2 {
     color: white;
     text-shadow: 2px 2px 2px black;
 }
+
+/* #team-management {
+    display: none;
+}
+
+#schedule-management {
+    display: none;
+}
+
+#flex-registration {
+    display: none;
+}
+
+#player-portal {
+    display: none;
+}
+
+#multiple-sports {
+    display: none;
+} */
 
 /* Below is the CSS for the Heroes items */
 
