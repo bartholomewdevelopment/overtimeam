@@ -79,6 +79,16 @@ header h2 {
 
 .card {
     min-width: 175px;
+        
+}
+
+.profile {
+    width: 75%;
+}
+
+.productH1 {
+    text-shadow: 3px 3px #fff;
+    color: black;
 }
 
 .card-header {
@@ -89,11 +99,11 @@ header h2 {
 .cardHeaderLink {
     color: black;
     font-family: "Open Sans";
-    font-size: large;
+    font-size: x-large;
 }
 
 .card-shadow {
-    box-shadow: 3px 3px 3px black; /*#1d75bd*/
+    box-shadow: 3px 3px 3px black;
 }
 
 .card-space {
@@ -160,7 +170,11 @@ header h2 {
 }
 
 .profilePic {
-    height: 450px;
+    height: 225px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+
 }
 
 .row-content {

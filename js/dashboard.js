@@ -12,29 +12,30 @@
     type: 'line',
     data: {
       labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
+        'Game 1',
+        'Game 2',
+        'Game 3',
+        'Game 4',
+        'Game 5',
+        'Game 6',
+        'Game 7'
       ],
       datasets: [{
         data: [
-          15339,
-          21345,
-          18483,
-          24003,
-          23489,
-          24092,
-          12034
+          20,
+          12,
+          18,
+          32,
+          26,
+          15,
+          32
         ],
         lineTension: 0,
         backgroundColor: 'transparent',
         borderColor: '#007bff',
         borderWidth: 4,
         pointBackgroundColor: '#007bff'
+
       }]
     },
     options: {
