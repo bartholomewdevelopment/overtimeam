@@ -108,12 +108,26 @@
           <div class="modal-body">
               
               <img src="/img/joeyprofile.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
-              <h3 class="media-heading">Joseph Bartholomew <small>Ohio</small></h3>
+              <h3 class="media-heading">Joseph Bartholomew <small>Ohio, USA</small></h3>
               <span><strong>Skills: </strong></span>
-                  <span class="label label-warning">HTML5/CSS</span>
+              <ul>
+                <li>
+                  HTML5/CSS
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+                <li>
+                  React
+                </li>
+                <li>
+                  NodeJS & MongoDB
+                </li>
+              </ul>  
+                  <!-- <span class="label label-warning">HTML5/CSS</span>
                   <span class="label label-info">Bootstrap</span>
                   <span class="label label-info">React</span>
-                  <span class="label label-success">NodeJS & MongoDB</span>
+                  <span class="label label-success">NodeJS & MongoDB</span> -->
               
               <hr>
               
@@ -132,7 +146,96 @@
 </div>
 <!-- End of Joey Modal-->
  
+<!-- Start of Jerome Modal-->
+<div class="modal fade" id="jeromeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Jerome Checketts</h4>
+              </div>
+          <div class="modal-body">
+              
+              <img src="/img/jerome profile pic.png" name="aboutme" width="140" height="140" class="img-circle"></a>
+              <h3 class="media-heading">Jerome Checketts <small>Texas, USA</small></h3>
+              <span><strong>Skills: </strong></span>
+              <ul>
+                <li>
+                  HTML5/CSS
+                </li>
+                <li>
+                  Bootstrap
+                </li>
+                <li>
+                  React
+                </li>
+                <li>
+                  NodeJS & MongoDB
+                </li>
+              </ul>    
+              
+              <hr>
+              
+              <p class="text-left"><strong>Bio: </strong><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+              <br>
+              
+          </div>
+          <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Back to the Team</button>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End of Jerome Modal-->
 
+<!-- Start of Matt Modal-->
+<div class="modal fade" id="mattModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+              <h4 class="modal-title" id="myModalLabel">Matt Theel</h4>
+              </div>
+          <div class="modal-body">
+              
+              <img src="/img/mattprofile.jpg" name="aboutme" width="140" height="140" class="img-circle"></a>
+              <h3 class="media-heading">Matt Theel <small>Utah, USA</small></h3>
+              <span><strong>Skills: </strong></span>
+              <ul>
+                <li>
+                  MS Sports Admin degree
+                </li>
+                <li>
+                  Football Coach
+                </li>
+                <li>
+                  High School Teacher
+                </li>
+                <li>
+                  Sits on Athletics Board
+                </li>
+              </ul>
+                  
+              
+              <hr>
+              
+              <p class="text-left"><strong>Bio: </strong><br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+              <br>
+              
+          </div>
+          <div class="modal-footer">
+              
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Back to the Team</button>
+              
+          </div>
+      </div>
+  </div>
+</div>
+<!-- End of Matt Modal-->
 <main>
 
   <div style="background: linear-gradient(135deg, #24a9e2, #1d75bd)" id="mainDiv">
@@ -174,7 +277,7 @@
         <div class="col-lg-4 col-sm-6">
           <div class="card hovercard">
               <div class="cardheader"></div>
-              <div class="avatar"><img alt="" src="/img/jerome profile pic.png"></div>
+              <div class="avatar"><img data-toggle="modal" data-target="#jeromeModal" alt="" src="/img/jerome profile pic.png"></div>
               <div class="info">
                   <div class="title"><a target="_blank" href="#">Jerome Checketts</a></div>
                   <div class="desc">Sales</div>
@@ -193,7 +296,7 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card hovercard">
             <div class="cardheader"></div>
-            <div class="avatar"><img alt="" src="/img/mattprofile.jpg"></div>
+            <div class="avatar"><img data-toggle="modal" data-target="#mattModal" alt="" src="/img/mattprofile.jpg"></div>
             <div class="info">
                 <div class="title"><a target="_blank" href="#">Matt Theel, MAA</a></div>
                 <div class="desc">Educator</div>
