@@ -106,7 +106,7 @@
       <div id="mainDiv">
         <!-- <div class="container "> -->
           <div class="row">
-            <div class="col-6 mktbg">
+            <div class="col-md-6 mktbg">
               <h1>Overtime Athletic Management</h1>
               <h2>Designed with the entire sports program in mind.</h2>
               <p>
@@ -115,7 +115,7 @@
               <a href="demo.html" class="btn btn-lg btn-light btn-shadow">Schedule a Live Demonstration</a>
             </div>
             <div class="col pr-0 d-flex align-items-center">
-              <img src="img/sport_management.jpg" class="img-fluid float-right" id="mainIMG" alt="" />
+              <img src="img/sport_management.jpg" class="img-fluid float-right hidden-mobile" id="mainIMG" alt=""/>
             </div>
           </div>
         <!-- </div> -->
@@ -130,7 +130,8 @@
               How We Will Help Your Program Be Successful</button>
             </h2>
           </div>
-          <div class="col-2 text-left">
+          <div class="row row-cols-1 row-cols-md-2">
+          <div class="col-md-3 text-left">
             <div class="card card-shadow">
               <img class="img-fluid" src="img/Signup.png" class="card-img-top" alt="line-up list">
               <div class="card-header" style=" background-color: lightgray">
@@ -146,7 +147,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2 text-left">
+          <div class="col-md-3 text-left">
             <div class="card card-shadow">
               <img class="img-fluid" src="img/Roster.png" alt="roster">
               <div class="card-header" style="background-color: lightgray">
@@ -162,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2 text-left">
+          <div class="col-md-3 text-left">
             <div class="card card-shadow">
               <img class="img-fluid" src="img/SportsEquipment.png" alt="sporting equipment">
               <div class="card-header" style="background-color: lightgray">
@@ -177,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2 text-left">
+          <div class="col-md-3 text-left">
             <div class="card card-shadow">
               <img class="img-fluid" src="img/Headset.png" alt="sports headset">
               <div class="card-header" style="background-color: lightgray">
@@ -193,7 +194,7 @@
               </div>
             </div>
           </div>
-          <div class="col-2 text-left">
+          <!-- <div class="col-2 text-left">
             <div class="card card-shadow">
               <img class="img-fluid" src="img/Calendar.png" alt="calendar">
               <div class="card-header" style="background-color: lightgray">
@@ -208,7 +209,8 @@
                 <a href="demo.html" class="btn btn-primary">Learn More</a>
               </div>
             </div>
-          </div>
+          </div> -->
+        </div>
         </div>
       </div>
 
@@ -216,13 +218,13 @@
       <div class="d-flex" id="secondDiv">
         <div class="container-fluid mx-5">
           <div class="row w-auto" style="height: 500px;">
-            <div class="col-6 text-left">
+            <div class="col-md-6 text-left">
               <h2 class="pt-5">Work like the professional you are!</h2>
-              <h4>All the tools you need to get and stay organized</h4>
+              <h4 style="font-size: 2vw;">All the tools you need to get and stay organized</h4>
               <div class="row mt-4 mb-3 offset-1">
                 <div class="col-2">
                   <a role="button">
-                    <i id="teamMngmtBtn" onclick="showAndHide(0)" class="fa-regular fa-square-check fa-2x fa-hover-show active"></i>
+                    <i onclick="showAndHide(0)" class="fa-regular fa-square-check fa-2x fa-hover-show active"></i>
                   </a>
                 </div>
                 <h5>Team Management</h5>
@@ -257,25 +259,25 @@
                     <i onclick="showAndHide(4)" class="fa-regular fa-square-check fa-2x fa-hover-show"></i>
                   </a>
                 </div>
-                <h5>Many sports, programs and organizations supported</h5>
+                <h5>Most organizations supported</h5>
               </div>
             </div>
-            <div class="col-6" style="display: flex; align-items: center;">
+            <div id="imgStack" class="col-md-6" style="display: flex; align-items: center;">
               <div class="col-10 mx-auto">
                 <div>
                   <img id="0" class="w-100" src="img/teamManagement.jpg" alt="">
                 </div>
                 <div>
-                  <img id="1" style="display: none;" class="w-100" src="img/schedule management.jpg" alt="">
+                  <img id="1" style="display: none;" class="w-100 hidden-mobile" src="img/schedule management.jpg" alt="">
                 </div>
                 <div>
-                  <img id="2" style="display: none;" class="w-100" src="img/flexible registration.jpg" alt="">
+                  <img id="2" style="display: none;" class="w-100 hidden-mobile" src="img/flexible registration.jpg" alt="">
                 </div>
                 <div>
-                  <img id="3" style="display: none;" class="w-100" src="img/players.webp" alt="">
+                  <img id="3" style="display: none;" class="w-100 hidden-mobile" src="img/players.webp" alt="">
                 </div>
                 <div>
-                  <img id="4" style="display: none;" class="w-100" src="img/multiple_sports_program.jpg" alt="">
+                  <img id="4" style="display: none;" class="w-100 hidden-mobile" src="img/multiple_sports_program.jpg" alt="">
                 </div>
               </div>
             </div>
@@ -284,7 +286,7 @@
       </div>
       <!-- End of second section-->
 
-      <div class="b-example-divider mb-0"></div>
+      <div class="b-example-divider mt-5 mb-0"></div>
 
       <footer>
         <div class="container">

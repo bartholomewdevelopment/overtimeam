@@ -213,6 +213,11 @@ header h2 {
     align-items: center;
 }
 
+#imgStack {
+    width: 70%;
+    height: auto;
+}
+
 #mainDiv {
     /* min-height: 676.5px;
     max-height: 900px; */
@@ -243,6 +248,19 @@ header h2 {
 #secondDiv h2 {
     color: white;
     text-shadow: 2px 2px 2px black;
+    font-size: 4vw;
+}
+
+#secondDiv h4 {
+    font-size: 2vw;
+}
+
+#secondDiv h5 {
+    font-size: 2vw;
+}
+
+#secondDiv i {
+    font-size: 3.25vw;
 }
 
 /* #team-management {
@@ -278,6 +296,12 @@ header h2 {
 @media (min-width: 768px) {
     .bd-placeholder-img-lg {
     font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hidden-mobile {
+        display: none;
     }
 }
 
