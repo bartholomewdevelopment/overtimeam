@@ -48,7 +48,7 @@ header h2 {
 }
 
 .btn-facebook {
-    background-color: #405D9D;
+    background-color: #3b5998;
     color: #fff;
 }
 .btn-twitter {
@@ -56,16 +56,16 @@ header h2 {
     color: #fff;
 }
 .btn-google {
-    background-color: red;
+    background-color: #ea4435;
     color: #fff;
 }
 .btn-yahoo {
-    background-color: purple;
+    background-color: #720e9e;
     color: #fff;
 }
 
 .btn-microsoft {
-    background-color: darkred;
+    background-color: #0078d4;
     color: #fff;
 }
 
